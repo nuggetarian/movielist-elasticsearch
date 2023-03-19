@@ -29,3 +29,7 @@ The website works by typing a query into the input field and then getting a list
 
 <img src="images/homepage.jpg" width="640" height="360">
 <img src="images/search.jpg" width="640" height="360">
+
+# To-do
+- Comment the code
+- Responsivness
