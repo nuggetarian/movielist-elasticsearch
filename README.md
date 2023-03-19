@@ -1,8 +1,11 @@
 # Top 1000 imdb movies
 
 A simple website to view the first top 1000 movies from imdb.
+
 It utilizes elasticsearch as a database, with the dataset accessible [here](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows).
+
 The point of using elasticsearch is to showcase how it searches for documents based on the closest match and score from the search.
+
 The website works by typing a query into the input field and then getting a list of the closest matches.
 
 # Set-up
