@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-div {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-field {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 150px 12px 0px;
+    font-size: 20px;
+    color: whitesmoke;
+
+}
+
+.welcome {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.words {
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 30vw;
+    gap: 1vw;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.poster {
+    width: auto;
+    height: 15vh;
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.image {
+    position: relative;
+}
+
+
+.desc-box {
+    align-self: flex-start;
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-top: 1vh;
+}
+
+.year {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.year::before {
+    margin-right: 7px;
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 600;
+    content: "\f133";
+}
+
+.button {
+    background-color: hsl(215, 51%, 70%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    border: 2px solid hsl(215, 51%, 70%);
+
+}
+
+.button:hover {
+    background-color: white;
+    color: hsl(215, 51%, 70%);
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+}
+
+.additional-desc {
+    display: flex;
+    gap: 1vw;
+}
+
+.runtime {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.runtime::before {
+    margin-right: 7px;
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 600;
+    content: "\f017";
+}
+
+.overview {
+    color: #b3b3b3;
+    text-justify: auto;
+    text-align: justify;
+}
+
+.genre {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.genre::before {
+    margin-right: 7px;
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 600;
+    content: "\f630";
+}
+
+.rating {
+    color: #FFDD83;
+    font-weight: 400;
+    margin-bottom: 1vh;
+}
+
+.rating::before {
+    margin-right: 7px;
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 600;
+    content: "\f005";
+}
+
+footer {
+    color: #b3b3b3;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.wrapper-main {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-div {
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .search-field {
+    width: 80%;
+} */

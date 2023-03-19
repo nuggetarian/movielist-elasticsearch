@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="wrapper">
+    <p class="words">Results for: {{ words }}</p>
+    {% for result in resp['hits']['hits'] %}
+    <div class="card">
+        <img class="poster" src="{{ result['_source']['poster'] }}" alt="Poster">
+        <div class="desc-box">
+            <p class="title">{{ result['_source']['name'] }}</p>
+            <div class="additional-desc">
+                <p class="runtime">{{ result['_source']['runtime'] }}</p>
+                <p class="year">{{ result['_source']['year'] }}</p>
+                <p class="genre">{{ result['_source']['genre'] }}</p>
+            </div>
+            <p class="rating">{{ result['_source']['rating'] }}</p>
+            <p class="overview">{{ result['_source']['overview'] }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <footer>&copy; 2023; Made by Nuggetarian</footer>
+</div>
+{% endblock content %}

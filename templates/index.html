@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="wrapper-main">
+    <h1 class="welcome">Search the top 1000 IMDB movies</h1>
+    <form method="POST" action="{{ url_for('search') }}">
+        <div class="search-div">
+            <input class="search-field" name="query" placeholder="Search a movie..." type="text">
+        </div>
+    </form>
+</div>
+</div>
+
+{% endblock content %}
