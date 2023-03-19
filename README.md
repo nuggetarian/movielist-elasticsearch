@@ -27,5 +27,5 @@ The website works by typing a query into the input field and then getting a list
 
 # Screenshots
 
-<img src="images/homepage.png" width="640" height="360">
-<img src="images/search.png" width="640" height="360">
+<img src="images/homepage.jpg" width="640" height="360">
+<img src="images/search.jpg" width="640" height="360">
