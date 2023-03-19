@@ -16,8 +16,8 @@ The website works by typing a query into the input field and then getting a list
 
 # Requirements
 
-python -m pip install elasticsearch
-python -m pip install black (maybe)
-python -m pip install flask
-python -m pip install pandas
-python -m pip install numpy
+- python -m pip install elasticsearch
+- python -m pip install black (maybe)
+- python -m pip install flask
+- python -m pip install pandas
+- python -m pip install numpy
