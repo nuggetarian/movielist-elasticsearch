@@ -24,3 +24,8 @@ The website works by typing a query into the input field and then getting a list
 - python -m pip install flask
 - python -m pip install pandas
 - python -m pip install numpy
+
+# Screenshots
+
+<img src="images/homepage.png" width="640" height="360">
+<img src="images/search.png" width="640" height="360">
