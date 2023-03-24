@@ -39,7 +39,7 @@ def search():
 
     payload = {
         "bool": {
-            "must": [{"span_near": {"clauses": clauses, "slop": 0, "in_order": False}}]
+            "must": [{"span_near": {"clauses": clauses, "slop": 2, "in_order": False}}]
         }
     }
 
