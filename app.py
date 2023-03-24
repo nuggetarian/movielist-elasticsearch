@@ -28,20 +28,32 @@ def search():
     query = request.form["query"].lower()
     words = query.split(" ")
     
-    clauses = [
-        {
-            "span_multi": {
-                "match": {"fuzzy": {"name": {"value": value, "fuzziness": "AUTO"}}}
+    payload = {
+            "bool": {
+            "must": [
+                {
+                "match": {
+                    "name": {
+                    "query": value,
+                    "fuzziness": "auto"
+                    }  
+                }
+                }
+                for value in words
+            ],
+            "should": [
+                {
+                "match_phrase": {
+                    "name": {
+                    "query": value,
+                    "slop": 2
+                    }
+                }
+                }
+                for value in words
+            ]
             }
         }
-        for value in words
-    ]
-
-    payload = {
-        "bool": {
-            "must": [{"span_near": {"clauses": clauses, "slop": 2, "in_order": False}}]
-        }
-    }
 
     resp = es.search(index="movies", query=payload, size=5)
     return render_template('movie.html', resp=resp, words=words)
